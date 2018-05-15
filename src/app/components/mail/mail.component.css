@@ -1,0 +1,56 @@
+.headerpad
+{
+  margin-top:10px;
+}
+.buttonpadding
+{
+  margin-left:10px;
+  margin-top: 5px;
+}
+/* to disabled the button delete */
+.disabled {
+  cursor: not-allowed !important;
+  opacity: 0.5;
+}
+/* button color show here */
+.colorbutton
+{
+  background-color:  #4F4F4F;
+}
+.comosebutton
+{
+  background-color: white;
+  color: black;
+}
+.tablecolor
+{
+  /* background-color:  #4F4F4F;
+  color: white; */
+}
+/* change the text color  */
+.textcolor
+{
+ color:white;
+}
+.acolor
+{
+  color: white;
+}
+.space
+{
+  margin-top: 90px;
+}
+.location
+{
+     padding-right: 300px;
+}
+
+.tablemargin
+{
+  margin-top: 15px;
+}
+.namemodify
+{
+  width: 40% !important;
+
+}

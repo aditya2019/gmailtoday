@@ -1,0 +1,44 @@
+{
+  "mails": [
+    {
+      "id": 1,
+      "name": "Aditya",
+      "description": "Born into a privileged caste, Gandhi was fortunate to receive a comprehensive education, but proved a mediocre student. In May 1883, aged 13, Gandhi was married to Kasturba Makhanji, a girl also aged 13, through the arrangement of their respective parents, as is customary in India. Following his entry into Samaldas College, at the University of Bombay, she bore him the first of four sons, in 1888. Gandhi was unhappy at college, following his parent’s wishes to take the bar, and when he was offered the opportunity of furthering his studies overseas, at University College London, aged 18, he accepted with alacrity, starting there in September 1888.",
+      "title": "job",
+      "date": "13/4/18",
+      "isRead": true
+    },
+    {
+      "id": 2,
+      "name": "Rohit",
+      "description": "Born into a privileged caste, Gandhi was fortunate to receive a comprehensive education, but proved a mediocre student. In May 1883, aged 13, Gandhi was married to Kasturba Makhanji, a girl also aged 13, through the arrangement of their respective parents, as is customary in India. Following his entry into Samaldas College, at the University of Bombay, she bore him the first of four sons, in 1888. Gandhi was unhappy at college, following his parent’s wishes to take the bar, and when he was offered the opportunity of furthering his studies overseas, at University College London, aged 18, he accepted with alacrity, starting there in September 1888.",
+      "title": "job",
+      "date": "13/4/18",
+      "isRead": true
+    },
+    {
+      "id": 3,
+      "name": "Ravi",
+      "description": "Born into a privileged caste, Gandhi was fortunate to receive a comprehensive education, but proved a mediocre student. In May 1883, aged 13, Gandhi was married to Kasturba Makhanji, a girl also aged 13, through the arrangement of their respective parents, as is customary in India. Following his entry into Samaldas College, at the University of Bombay, she bore him the first of four sons, in 1888. Gandhi was unhappy at college, following his parent’s wishes to take the bar, and when he was offered the opportunity of furthering his studies overseas, at University College London, aged 18, he accepted with alacrity, starting there in September 1888.",
+      "title": "job",
+      "date": "13/4/18",
+      "isRead": true
+    },
+    {
+      "id": 2,
+      "name": "kapil",
+      "description": "Born into a privileged caste, Gandhi was fortunate to receive a comprehensive education, but proved a mediocre student. In May 1883, aged 13, Gandhi was married to Kasturba Makhanji, a girl also aged 13, through the arrangement of their respective parents, as is customary in India. Following his entry into Samaldas College, at the University of Bombay, she bore him the first of four sons, in 1888. Gandhi was unhappy at college, following his parent’s wishes to take the bar, and when he was offered the opportunity of furthering his studies overseas, at University College London, aged 18, he accepted with alacrity, starting there in September 1888.",
+      "title": "job",
+      "date": "13/4/18",
+      "isRead": true
+    },
+    {
+      "id": 4,
+      "name": "rahul",
+      "description": "Born into a privileged caste, Gandhi was fortunate to receive a comprehensive education, but proved a mediocre student. In May 1883, aged 13, Gandhi was married to Kasturba Makhanji, a girl also aged 13, through the arrangement of their respective parents, as is customary in India. Following his entry into Samaldas College, at the University of Bombay, she bore him the first of four sons, in 1888. Gandhi was unhappy at college, following his parent’s wishes to take the bar, and when he was offered the opportunity of furthering his studies overseas, at University College London, aged 18, he accepted with alacrity, starting there in September 1888.",
+      "title": "job",
+      "date": "13/4/18",
+      "isRead": true
+    }
+  ]
+}

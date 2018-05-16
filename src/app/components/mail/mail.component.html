@@ -10,6 +10,9 @@
    <button type="button" class="btn btn-info colorbutton" (click)="reload()"><i class="fa fa-rotate-right"></i></button>
    <button type="button" class="btn btn-info colorbutton" (click)="deleteMail()" [disabled]="deleteshow" [class.disabled]="deleteshow" ><i class="fa fa-trash" aria-hidden="true"></i></button>
    <button type="button" class="btn btn-info colorbutton" ><i class="fa fa-check-circle"></i>&nbsp;more</button>
+   <button (click)="handleAuthClick()">
+        Authorize
+    </button>
    </div>
 
    <div class="col-md-3 mx-auto">

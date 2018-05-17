@@ -9,13 +9,15 @@ import { ShowmailComponent } from './components/showmail/showmail.component';
 import { AppRoutingModule } from './/app-routing.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastModule} from 'ng2-toastr/ng2-toastr';
+import { GmailapiComponent } from './components/gmailapi/gmailapi.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MailComponent,
     HeaderComponent,
-    ShowmailComponent
+    ShowmailComponent,
+    GmailapiComponent
   ],
   imports: [
     BrowserModule,

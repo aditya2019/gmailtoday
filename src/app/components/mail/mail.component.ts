@@ -41,71 +41,71 @@ export class MailComponent implements OnInit {
     //this.getMails();
   }
 
-  checkAuthAuto = () => {
-      gapi.auth.authorize(
-          {
-              'client_id': this.CLIENT_ID,
-              'scope': this.SCOPES.join(' '),
-              'immediate': true
-          }, this.handleAuthResult);
-  };
-
-  checkAuthManual = () => {
-      gapi.auth.authorize(
-          {
-              'client_id': this.CLIENT_ID,
-              'scope': this.SCOPES.join(' '),
-              'immediate': false
-          }, this.handleAuthResult);
-      return false;
-  };
-
-
-  handleAuthResult = (authResult) => {
-      var authorizeDiv = document.getElementById('authorize-div');
-
-      if (authResult && !authResult.error) {
-          // Hide auth UI, then load client library.
-          authorizeDiv.style.display = 'none';
-          this.loadGmailApi();
-      } else {
-          // Show auth UI, allowing the user to initiate authorization by
-          // clicking authorize button.
-          authorizeDiv.style.display = 'inline';
-      }
-  };
-
-  loadGmailApi = () => {
-      gapi.client.load('gmail', 'v1', this.listLabels);
-  };
-
-  listLabels = () => {
-      var request = gapi.client.gmail.users.labels.list({
-          'userId': 'me'
-      });
-      var self = this;
-
-      request.execute(function(resp) {
-          var labels = resp.labels;
-          self.appendPre('Labels:');
-
-          if (labels && labels.length > 0) {
-              for (var i = 0; i < labels.length; i++) {
-                  var label = labels[i];
-                  self.appendPre(label.name)
-              }
-          } else {
-              self.appendPre('No Labels found.');
-          }
-      });
-  };
-
-  appendPre = (message) => {
-      var pre = document.getElementById('output');
-      var textContent = document.createTextNode(message + '\n');
-      pre.appendChild(textContent);
-  }
-
+  // checkAuthAuto = () => {
+  //     gapi.auth.authorize(
+  //         {
+  //             'client_id': this.CLIENT_ID,
+  //             'scope': this.SCOPES.join(' '),
+  //             'immediate': true
+  //         }, this.handleAuthResult);
+  // };
+  //
+  // checkAuthManual = () => {
+  //     gapi.auth.authorize(
+  //         {
+  //             'client_id': this.CLIENT_ID,
+  //             'scope': this.SCOPES.join(' '),
+  //             'immediate': false
+  //         }, this.handleAuthResult);
+  //     return false;
+  // };
+  //
+  //
+  // handleAuthResult = (authResult) => {
+  //     var authorizeDiv = document.getElementById('authorize-div');
+  //
+  //     if (authResult && !authResult.error) {
+  //         // Hide auth UI, then load client library.
+  //         authorizeDiv.style.display = 'none';
+  //         this.loadGmailApi();
+  //     } else {
+  //         // Show auth UI, allowing the user to initiate authorization by
+  //         // clicking authorize button.
+  //         authorizeDiv.style.display = 'inline';
+  //     }
+  // };
+  //
+  // loadGmailApi = () => {
+  //     gapi.client.load('gmail', 'v1', this.listLabels);
+  // };
+  //
+  // listLabels = () => {
+  //     var request = gapi.client.gmail.users.labels.list({
+  //         'userId': 'me'
+  //     });
+  //     var self = this;
+  //
+  //     request.execute(function(resp) {
+  //         var labels = resp.labels;
+  //         self.appendPre('Labels:');
+  //
+  //         if (labels && labels.length > 0) {
+  //             for (var i = 0; i < labels.length; i++) {
+  //                 var label = labels[i];
+  //                 self.appendPre(label.name)
+  //             }
+  //         } else {
+  //             self.appendPre('No Labels found.');
+  //         }
+  //     });
+  // };
+  //
+  // appendPre = (message) => {
+  //     var pre = document.getElementById('output');
+  //     var textContent = document.createTextNode(message + '\n');
+  //     pre.appendChild(textContent);
+  // }
+  //
 
 
 

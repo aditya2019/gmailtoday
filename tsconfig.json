@@ -5,6 +5,7 @@
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
+    "types": ["gapi", "gapi.auth2", "gapi.auth"],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",

@@ -10,6 +10,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastModule} from 'ng2-toastr/ng2-toastr';
 import { GmailapiComponent } from './components/gmailapi/gmailapi.component';
+import { SendmailComponent } from './components/sendmail/sendmail.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -17,14 +20,17 @@ import { GmailapiComponent } from './components/gmailapi/gmailapi.component';
     MailComponent,
     HeaderComponent,
     ShowmailComponent,
-    GmailapiComponent
+    GmailapiComponent,
+    SendmailComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ToastModule.forRoot(),
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+  ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

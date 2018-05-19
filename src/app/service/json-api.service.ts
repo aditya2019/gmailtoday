@@ -16,7 +16,24 @@ Success(title:string,meassage?:string)
   toastr.success(title,meassage);
 }
 // ________________________________________________________________________________________________
+addNew(usercreds) {
+  var headers = new Headers();
+        var creds = 'name=' + usercreds.username + '&password=' + usercreds.password;
+        var emailid = 'name=' + usercreds.username;
 
+        headers.append('Content-Type', 'application/X-www-form-urlencoded');
+
+        this.http.post('http://localhost:3333/adduser', creds, {headers: headers}).subscribe((data) => {
+            if(data.json().success) {
+              console.log('adding user');
+            //     this.http.post('http://localhost:3333/sendmail', emailid, {headers: headers}).subscribe((data) => {
+            // if(data.json().success) {
+            //   console.log('Sent successfully');
+             }
+         }
+       )
+       }
+  
 
 // ________________________________________________________________________________________________
   getMails(){
